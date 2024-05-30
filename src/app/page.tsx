@@ -65,7 +65,7 @@ export default function Home() {
     {
       name: "Libary Management System",
       description:
-        "A web application that allows users to borrow and return books from a library.",
+        "A web application that allows users to borrow and return books from a library. Default email:admin@gmail.com password: admin1234",
       stacks: ["React", "Node.js", "Firebase"],
       image: "/library.png",
       link: "https://react-js-ralph-libary.vercel.app",
@@ -857,7 +857,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row text-white" style={{ margin: "40px 0" }} ref={footer}>
+      <div className="row text-white" style={{ margin: "0 0 100px 0" }} ref={footer}>
         <div className={`col-md-4 ${styles.testimonials}`}>
           <div className={styles.stars}>
             <i className="fa fa-star"></i>
