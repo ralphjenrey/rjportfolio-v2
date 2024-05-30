@@ -287,7 +287,7 @@ export default function Home() {
             <p className={`${styles.about} fs-6`}>
               I never would have guessed that I would get this far. I almost
               gave up on becoming a web developer when I was a freshman in
-              college because it's so difficult. It dawns on me then that in all
+              college because it&apos;s so difficult. It dawns on me then that in all
               the year I spent working in
               <span className={styles.highlight}>
                 {" "}
@@ -303,9 +303,9 @@ export default function Home() {
               strengthening application security through speed optimization.
               <br></br>
               <br></br>
-              I'm a fourth-year student and entering senior right now. Most of
+              I&apos;m a fourth-year student and entering senior right now. Most of
               the time, I like learning while also helping my friends and
-              classmates comprehend programming ideas. Right now, I'm trying to
+              classmates comprehend programming ideas. Right now, I&apos;m trying to
               find 600 hours of on-the-job training. As I adjust and
               participate, I am excited to be a part of and learn from your
               organization. I spend my leisure time with my daughter and my
@@ -751,7 +751,7 @@ export default function Home() {
       <div className="row" style={{ margin: "40px 0" }} ref={projectTitle}>
         <div className="col-md-12">
           <h6 className={`text-white ${styles.projectHeader}`}>
-            Projects I've completed
+            Projects I&apos;ve completed
           </h6>
         </div>
       </div>
@@ -868,9 +868,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-              "Ralph is a very talented developer. He is very passionate about
+            &quot;Ralph is a very talented developer. He is very passionate about
               his work and is always looking for ways to improve. He is a great
-              team player and is always willing to help others."
+              team player and is always willing to help others.&quot;
             </blockquote>
             <figcaption>
               <strong>Jem Alcantara</strong>
@@ -888,9 +888,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-              "The app is now complete and functioning excellently with no bugs.
+            &quot;The app is now complete and functioning excellently with no bugs.
               We will keep you updated, but as of now, everything is running
-              smoothly. Thank you for the great work."
+              smoothly. Thank you for the great work.&quot;
             </blockquote>
             <figcaption>
               <strong>Aubrey</strong>
@@ -908,9 +908,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-              "Thank you very much. My daughter said that you have already sent
-              it. Sorry if I'm being persistent and I was the one they mentioned
-              in the group chat earlier. Thank you again."
+            &quot;Thank you very much. My daughter said that you have already sent
+              it. Sorry if I&apos;m being persistent and I was the one they mentioned
+              in the group chat earlier. Thank you again.&quot;
             </blockquote>
             <figcaption>
               <strong>Dee Online Shoppe</strong>
