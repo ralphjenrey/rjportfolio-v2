@@ -65,7 +65,7 @@ export default function Home() {
     {
       name: "Libary Management System",
       description:
-        "A web application that allows users to borrow and return books from a library. Default email:admin@gmail.com password: admin1234",
+        "A web application that allows users to borrow and return books from a library. Default email: admin@gmail.com password: admin1234",
       stacks: ["React", "Node.js", "Firebase"],
       image: "/library.png",
       link: "https://react-js-ralph-libary.vercel.app",
