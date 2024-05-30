@@ -297,16 +297,16 @@ export default function Home() {
               had never encountered the kind of difficulty presented by the IT
               sector. I was forced to quit from a work in the BPO sector as I
               knew it was not for me. As a freshman and junior, I studied web
-              development on my own. until I was hired on as a Full Stack
-              Developer freelancer by a startup business. I gain more knowledge
+              development on my own. until I was hired on as a <span className={styles.highlight}> Full Stack
+              Developer</span> freelancer by a startup business. I gain more knowledge
               and expertise from working on actual tasks. primarily on
               strengthening application security through speed optimization.
               <br></br>
               <br></br>
-              I&apos;m a fourth-year student and entering senior right now. Most of
+              I&apos;m a <span className={styles.highlight}> fourth-year</span> student and entering senior right now. Most of
               the time, I like learning while also helping my friends and
               classmates comprehend programming ideas. Right now, I&apos;m trying to
-              find 600 hours of on-the-job training. As I adjust and
+              find <span className={styles.highlight}> 600 hours of on-the-job training</span>. As I adjust and
               participate, I am excited to be a part of and learn from your
               organization. I spend my leisure time with my daughter and my
               wife. Typically visit a mall. We see movies together occasionally.
