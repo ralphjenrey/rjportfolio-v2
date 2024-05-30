@@ -8,15 +8,20 @@ interface HeaderProps {
 
 
 function Header({ children }: HeaderProps) {
-  const [isMd, setIsMd] = useState(typeof window !== 'undefined' ? window.innerWidth > 768 : false);
+  const [isMd, setIsMd] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       setIsMd(window.innerWidth > 768);
     };
 
-  
+    // Initial check
+    handleResize();
 
+    // Listen for window resize
     window.addEventListener('resize', handleResize);
+
+    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
     };
