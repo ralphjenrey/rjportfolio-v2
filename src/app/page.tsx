@@ -70,6 +70,13 @@ export default function Home() {
       image: "/library.png",
       link: "https://react-js-ralph-libary.vercel.app",
     },
+    {
+      name: "My School Website",
+      description: "A website for a school that displays information about the school and its programs.",
+      stacks: ["HTML", "CSS", "JavaScript"],
+      image: "/school.png",
+      link: "https://ralphjenrey.github.io/ralphcecschool"
+    }
   ];
 
   useEffect(() => {
