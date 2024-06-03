@@ -4,7 +4,8 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import { useInView } from "react-intersection-observer";
-import { use, useEffect, useState } from "react";
+import React from "react";
+import {useEffect, useState } from "react";
 import Header from "./header";
 import { useSpring, animated } from "@react-spring/web";
 import { link } from "fs";
@@ -28,7 +29,7 @@ export default function Home() {
   const { ref: testimonials, inView: testimonialsView } = useInView({
     threshold: 0.5,
   });
-  
+
   const [aboutLineWidth, setAboutLineWidth] = useState(50);
   const [experienceLineWidth, setExperienceLineWidth] = useState(50);
   const [projectLineWidth, setProjectLineWidth] = useState(50);
@@ -72,11 +73,12 @@ export default function Home() {
     },
     {
       name: "My School Website",
-      description: "A website for a school that displays information about the school and its programs.",
+      description:
+        "A website for a school that displays information about the school and its programs.",
       stacks: ["HTML", "CSS", "JavaScript"],
       image: "/school.png",
-      link: "https://ralphjenrey.github.io/ralphcecschool"
-    }
+      link: "https://ralphjenrey.github.io/ralphcecschool",
+    },
   ];
 
   useEffect(() => {
@@ -92,7 +94,8 @@ export default function Home() {
   }, [isSlideHovered, projects.length]);
 
   const headerProps = useSpring({
-    opacity: projectView || projectTitleView || footerView || testimonialsView ? 0 : 1,
+    opacity:
+      projectView || projectTitleView || footerView || testimonialsView ? 0 : 1,
     transform:
       projectView || projectTitleView || footerView
         ? "translateX(-50px)"
@@ -172,8 +175,6 @@ export default function Home() {
     }
   }, [footerView]);
 
-
-
   useEffect(() => {
     if (projectView || projectTitleView || footerView || testimonialsView) {
       const timer = setTimeout(() => {
@@ -193,12 +194,17 @@ export default function Home() {
           {shouldRender && (
             <Header>
               <animated.header style={headerProps} className={styles.header}>
-         <a href="mailto:loquellanoralphjenrey@gmail.com">
-  <button className={`btn btn-outline-primary my-3 ${styles.contactMe}`}>
-    Contact Me
-    <i className="fa fa-send" style={{ marginLeft: '10px' }}></i>
-  </button>
-</a>
+                <a href="mailto:loquellanoralphjenrey@gmail.com">
+                  <button
+                    className={`btn btn-outline-primary my-3 ${styles.contactMe}`}
+                  >
+                    Contact Me
+                    <i
+                      className="fa fa-send"
+                      style={{ marginLeft: "10px" }}
+                    ></i>
+                  </button>
+                </a>
                 <div className={`text-white ${styles.name}`}>
                   Ralph Jenrey Loquellano
                 </div>
@@ -294,8 +300,8 @@ export default function Home() {
             <p className={`${styles.about} fs-6`}>
               I never would have guessed that I would get this far. I almost
               gave up on becoming a web developer when I was a freshman in
-              college because it&apos;s so difficult. It dawns on me then that in all
-              the year I spent working in
+              college because it&apos;s so difficult. It dawns on me then that
+              in all the year I spent working in
               <span className={styles.highlight}>
                 {" "}
                 customer service
@@ -304,19 +310,28 @@ export default function Home() {
               had never encountered the kind of difficulty presented by the IT
               sector. I was forced to quit from a work in the BPO sector as I
               knew it was not for me. As a freshman and junior, I studied web
-              development on my own. until I was hired on as a <span className={styles.highlight}> Full Stack
-              Developer</span> freelancer by a startup business. I gain more knowledge
-              and expertise from working on actual tasks. primarily on
-              strengthening application security through speed optimization.
+              development on my own. until I was hired on as a{" "}
+              <span className={styles.highlight}> Full Stack Developer</span>{" "}
+              freelancer by a startup business. I gain more knowledge and
+              expertise from working on actual tasks. primarily on strengthening
+              application security through speed optimization.
               <br></br>
               <br></br>
-              I&apos;m a <span className={styles.highlight}> fourth-year</span> student and entering senior right now. Most of
-              the time, I like learning while also helping my friends and
-              classmates comprehend programming ideas. Right now, I&apos;m trying to
-              find <span className={styles.highlight}> 600 hours of on-the-job training</span>. As I adjust and
-              participate, I am excited to be a part of and learn from your
-              organization. I spend my leisure time with my daughter and my
-              wife. Typically visit a mall. We see movies together occasionally.
+              I&apos;m a <span className={styles.highlight}>
+                {" "}
+                fourth-year
+              </span>{" "}
+              student and entering senior right now. Most of the time, I like
+              learning while also helping my friends and classmates comprehend
+              programming ideas. Right now, I&apos;m trying to find{" "}
+              <span className={styles.highlight}>
+                {" "}
+                600 hours of on-the-job training
+              </span>
+              . As I adjust and participate, I am excited to be a part of and
+              learn from your organization. I spend my leisure time with my
+              daughter and my wife. Typically visit a mall. We see movies
+              together occasionally.
             </p>
           </section>
 
@@ -335,6 +350,13 @@ export default function Home() {
                     Developed Android mobile applications using Flutter,
                     ensuring a seamless user experience on both Android
                     platforms.
+                  </li>
+                  <li>
+                    Lead one project from concept to completion, including the
+                    design, development, and deployment of the application.
+                  </li>
+                  <li>
+                    Maintenance of Laravel Project using MVC architecture.
                   </li>
                   <li>
                     Integrated Firebase services, such as Authentication,
@@ -388,7 +410,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div></div>
+    
             </div>
 
             <div className={`row mb-5 ${styles.experience}`}>
@@ -408,9 +430,30 @@ export default function Home() {
                   <li>Pitch sales to customer</li>
                 </ul>
               </div>
-              <div></div>
             </div>
+
+            <div className={`row mb-5 ${styles.experience}`}>
+              <h4 className="text-white">Education</h4>
+              <div className="col-lg-6 col-md-4 col-sm-4">
+                <header className={styles.date}>
+                  September 2021 - February 2022
+                </header>
+              </div>
+              <div className="col-lg-6 col-md-8 col-sm-8">
+                <h6 className={styles.jobPosition}>
+                  Cebu Eastern College - BS Information Technology
+                </h6>
+                <br></br>
+                <ul className={styles.jobDescription}>
+                  <li>Leader of defense projects</li>
+                  <li>2nd Year Dean Lister</li>
+                  <li>Help classmates on understanding programming concepts</li>
+                  <li>Make projects with commission</li>
+                </ul>
+              </div>
+              </div>
           </section>
+
 
           <div style={{ margin: 40 }}>
             <h4 className="text-center text-white opacity-50">Languages</h4>
@@ -864,7 +907,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="row text-white" style={{ margin: "0 0 100px 0" }} ref={footer}>
+      <div
+        className="row text-white"
+        style={{ margin: "0 0 100px 0" }}
+        ref={footer}
+      >
         <div className={`col-md-4 ${styles.testimonials}`}>
           <div className={styles.stars}>
             <i className="fa fa-star"></i>
@@ -875,9 +922,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-            &quot;Ralph is a very talented developer. He is very passionate about
-              his work and is always looking for ways to improve. He is a great
-              team player and is always willing to help others.&quot;
+              &quot;Ralph is a very talented developer. He is very passionate
+              about his work and is always looking for ways to improve. He is a
+              great team player and is always willing to help others.&quot;
             </blockquote>
             <figcaption>
               <strong>Jem Alcantara</strong>
@@ -895,9 +942,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-            &quot;The app is now complete and functioning excellently with no bugs.
-              We will keep you updated, but as of now, everything is running
-              smoothly. Thank you for the great work.&quot;
+              &quot;The app is now complete and functioning excellently with no
+              bugs. We will keep you updated, but as of now, everything is
+              running smoothly. Thank you for the great work.&quot;
             </blockquote>
             <figcaption>
               <strong>Aubrey</strong>
@@ -915,9 +962,9 @@ export default function Home() {
           </div>
           <figure>
             <blockquote>
-            &quot;Thank you very much. My daughter said that you have already sent
-              it. Sorry if I&apos;m being persistent and I was the one they mentioned
-              in the group chat earlier. Thank you again.&quot;
+              &quot;Thank you very much. My daughter said that you have already
+              sent it. Sorry if I&apos;m being persistent and I was the one they
+              mentioned in the group chat earlier. Thank you again.&quot;
             </blockquote>
             <figcaption>
               <strong>Dee Online Shoppe</strong>
