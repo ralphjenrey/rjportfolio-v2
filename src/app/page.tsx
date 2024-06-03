@@ -359,6 +359,9 @@ export default function Home() {
                     Maintenance of Laravel Project using MVC architecture.
                   </li>
                   <li>
+                    Experience in Agile development methodologies
+                  </li>
+                  <li>
                     Integrated Firebase services, such as Authentication,
                     Realtime Database, Cloud Firestore, and Cloud Storage.
                   </li>
@@ -436,7 +439,7 @@ export default function Home() {
               <h4 className="text-white">Education</h4>
               <div className="col-lg-6 col-md-4 col-sm-4">
                 <header className={styles.date}>
-                  September 2021 - February 2022
+                  August 2020 - April 2025
                 </header>
               </div>
               <div className="col-lg-6 col-md-8 col-sm-8">
@@ -446,7 +449,7 @@ export default function Home() {
                 <br></br>
                 <ul className={styles.jobDescription}>
                   <li>Leader of defense projects</li>
-                  <li>2nd Year Dean Lister</li>
+                  <li>2nd year Dean Lister</li>
                   <li>Help classmates on understanding programming concepts</li>
                   <li>Make projects with commission</li>
                 </ul>
